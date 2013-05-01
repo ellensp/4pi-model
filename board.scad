@@ -102,7 +102,7 @@ translate([7.2,14.4,1.6]) rotate([0,0,270]) 974_D_SMD_2();
 translate([38.1,14.55,1.6]) rotate([0,0,180]) SUPERSO8();
 translate([48.95,11.675,1.6]) rotate([0,0,180]) SUPERSO8();
 translate([95.925,21.825,1.6]) rotate([0,0,90]) SMD0_1X20();
-translate([84.35,21.75,1.6]) SMD0_1X6();
+//translate([84.35,21.75,1.6]) SMD0_1X6();
 translate([33.65,31.625,1.6]) rotate([0,0,90]) R0603();
 translate([40.5,32.1,1.6]) R0603();
 translate([36.625,21.05,1.6]) R0603();
