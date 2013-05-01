@@ -1,3 +1,4 @@
+module 4pi_model (fuse) {
 include <components.scad>
 
 difference() {
@@ -98,7 +99,7 @@ translate([43.7,25.775,1.6]) SMD0_1X20();
 translate([38.35,1.25,1.6]) 210_A_126_SMD_4();
 translate([51.7,4.025,1.6]) rotate([0,0,180]) SMD0_1();
 translate([16.4,3.95,1.6]) 950_D_SMD_2();
-translate([7.2,14.4,1.6]) rotate([0,0,270]) 974_D_SMD_2();
+translate([7.2-1.3,14.4,1.6]) rotate([0,0,270]) 974_D_SMD_2();
 translate([38.1,14.55,1.6]) rotate([0,0,180]) SUPERSO8();
 translate([48.95,11.675,1.6]) rotate([0,0,180]) SUPERSO8();
 translate([95.925,21.825,1.6]) rotate([0,0,90]) SMD0_1X20();
@@ -114,7 +115,7 @@ translate([39.475,19.75,1.6]) rotate([0,0,180]) C0603K();
 translate([45.4,15.225,1.6]) rotate([0,0,270]) R0603();
 translate([63.975,7.025,1.6]) SDCARD();
 translate([16.825,11.2,1.6]) rotate([0,0,270]) PQFNFET();
-translate([27.025,14.075,1.6]) rotate([0,0,90]) FUSEHOLDER();
+translate([27.025,14.075,1.6]) rotate([0,0,90]) FUSEHOLDER(fuse);
 translate([85.675,14.275,1.6]) rotate([0,0,180]) BUTTON();
 translate([55.25,1.55,1.6]) rotate([0,0,270]) C0603K();
 translate([55.8,37.975,1.6]) rotate([0,0,270]) C0603K();
@@ -213,3 +214,5 @@ translate([60.725,51.475,1.6]) rotate([0,0,90]) FIDUCIAL_L10();
 translate([69.925,63.6,1.6]) rotate([0,0,90]) FIDUCIAL_L10();
 translate([82.175,60.5,1.6]) FIDUCIAL_L10();
 translate([93.85,54.425,1.6]) FIDUCIAL_L10();
+}
+4pi_model(fuse=1);
